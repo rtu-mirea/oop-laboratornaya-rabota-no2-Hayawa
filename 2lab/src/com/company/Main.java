@@ -49,7 +49,7 @@ public class Main {
                     text1.setText();
                     while (OK1){
                         System.out.println("Текущий текст: " + text1.getText());
-                        System.out.println("1.Увеличить каждую цифру на 1\n2.Изменить текст\n3.Найти сумму всех чисел 8 cc\n4.заменить 10 сс на 16 сс\n5.Выход");
+                        System.out.println("1.Увеличить каждую цифру на 1\n2.Изменить текст\n3.Найти сумму всех чисел 8 cc\n4.Заменить 10 сс на 16 сс\n5.Выход");
                         n = in.nextInt();
                         switch (n){
                             case 1:
@@ -71,8 +71,13 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.println("None");
-                    System.out.println("for commit");
+                    Task3 regeh = new Task3();
+                    System.out.println("Введите входной текст с клавиатуры:");
+                    regeh.ConsoleInPut();
+                    System.out.println("\nЗадание 3.1 - ограниченен ли текст символом * (если ограниен - true; если нет - false):");
+                    regeh.inst();
+                    System.out.println("\nЗадание 3.2 - Удалить из текста все подстроки удовлетворяющие заданию 3.1:");
+                    regeh.outst();
                     break;
                 case 4:
                     ok = false;
